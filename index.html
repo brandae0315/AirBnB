@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Mapbox Custom Basemap</title>
+
+   
+
+    <style>
+        html {height: 100%;}
+        body {height: 100%;
+                padding: 0;
+                margin: 0;}
+        #map {width: 100%; height: 100%}
+    </style>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.css' rel='stylesheet' />
+
+ </head>
+
+ <body>
+
+    <div id="map"></div>
+
+<script>
+    
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYnJhbmRhZSIsImEiOiJjbWhhc3RrdTEwOXpyMmlvYTF0NGR3dTBhIn0.ABu9-kv4VQwk3CdIWbjS8w'; //access token from mapbox goes here
+
+
+    
+    const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/brandae/cmie65wx300ff01qm0kqrcbrc', 
+        center: [-76.697400, 37.271485],
+        zoom: 18.51
+    });
+
+//view the rest of the tutorial for Mapbox here: https://docs.mapbox.com/help/tutorials/add-points-pt-3/
+
+    
+</script>
+
+ </body>
+
+</html>
