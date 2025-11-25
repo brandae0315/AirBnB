@@ -84,7 +84,7 @@ for (i = 0; i < 3; i++) {
 // You can see we're also adding attribution information for our data sources
 // We will also add lines of code around this airbnb_listings object as we adjust the style of the symbols
 //Make sure and change your authorname in the attribute information
-airbnb_listings = L.geoJson.ajax("airbnb_listings.geojson",{
+airbnb_listings = L.geoJson.ajax("assets/airbnb_listings.geojson",{
     // assign a function to the onEachFeature parameter of the airbnb_listings object.
   // Then each (point) feature will have a popup window.
   // The content of the popup window is the value of `property_t` from the attribute table
@@ -132,7 +132,7 @@ function style(feature) {
     };
 }
 // 8. Add county polygons
-L.geoJson.ajax("zoning_districts.geojson", {
+L.geoJson.ajax("assets/zoning_districts.geojson", {
     style: style
 }).addTo(mymap);
 
